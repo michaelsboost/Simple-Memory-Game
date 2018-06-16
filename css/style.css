@@ -1,0 +1,38 @@
+/* globals */
+html, body {
+  height: 100%;
+  text-align: center;
+}
+p {
+  padding: 4px;
+  margin: 0;
+}
+
+/* align vertically and horizontally */
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* align cards side by side */
+.card {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+/* change opacity for non flipped cards */
+.cardreset {
+  opacity: 0.75;
+}
+
+/* lock opacity for flipped cards */
+.flipped.cardreset,
+.locked.cardreset {
+  opacity: 1;
+}
